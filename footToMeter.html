@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // meter = 0.305 * foot
+    // foot = 3.279 * meter
+    function nhapmeter(meter) {
+        document.getElementById('ketqua').innerText = 3.279 * meter;
+    };
+
+    function nhapfoot(foot) {
+        document.getElementById('ketqua').innerText = 0.305 * foot
+    };
+</script>
+<input id="nhapvaometer" type="number" onchange="nhapmeter(this.value)" oninput="nhapmeter(this.value)"
+       placeholder="nhap meter">
+<input id="nhapvaofoot" type="number" onchange="nhapfoot(this.value)" oninput="nhapfoot(this.value)"
+       placeholder="nhap foot">
+<p id="ketqua">Result</p>
+</body>
+</html>
